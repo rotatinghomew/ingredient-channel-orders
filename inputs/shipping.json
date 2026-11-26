@@ -24,5 +24,15 @@
     "at": "2026-12-03T11:15:00+08:00",
     "qty": 12,
     "plant": "FX-E2"
+  },
+  {
+    "event": "K4",
+    "instruction": "R-23",
+    "line": "L03",
+    "actor": "DE1",
+    "status": "delivered",
+    "at": "2026-12-05T16:00:00+08:00",
+    "qty": 10,
+    "plant": "FX-E2"
   }
 ]

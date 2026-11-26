@@ -15,8 +15,8 @@
     },
     {
       "id": "L02",
-      "plant": "FX-W1",
-      "district": "W13",
+      "plant": "FX-E0",
+      "district": "E12",
       "qty": 28,
       "within_order_independent": true,
       "sales": "DE1"
@@ -33,8 +33,9 @@
   "destination_confirmation": {
     "id": "U99",
     "line": "L02",
+    "plant": "FX-W1",
     "district": "W13",
     "signed_by": "GP-11",
-    "at": "2026-12-03T15:33:00+08:00"
+    "at": "2026-12-03T10:22:00+08:00"
   }
 }

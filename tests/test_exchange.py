@@ -17,6 +17,13 @@ class Exchanges(unittest.TestCase):
         lines = {row["id"]: row for row in order["lines"]}
         self.assertTrue(all(row["line"] in lines for row in shipping))
         self.assertNotEqual(order["billing_district"], lines["L02"]["district"])
+        self.assertNotEqual(order["destination_confirmation"]["district"], lines["L02"]["district"])
+        self.assertLess(shipping[0]["at"], order["destination_confirmation"]["at"])
+        self.assertGreater(shipping[1]["at"], order["destination_confirmation"]["at"])
+        move = source("territories")["move"]
+        self.assertLess(shipping[2]["at"][:10], move["effective"])
+        self.assertGreater(shipping[3]["at"][:10], move["effective"])
+        self.assertLess(shipping[3]["at"][:10], move["existing_use_grace_until"])
         self.assertEqual(shipping[0]["instruction"], shipping[1]["instruction"])
         self.assertEqual({shipping[0]["status"], shipping[1]["status"]}, {"unknown", "not_picked"})
         self.assertEqual(requests["transfer"]["line"], shipping[1]["line"])
