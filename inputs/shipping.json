@@ -1,0 +1,28 @@
+[
+  {
+    "event": "K1",
+    "instruction": "R-13",
+    "line": "L02",
+    "actor": "DE1",
+    "status": "unknown",
+    "at": "2026-12-03T10:01:00+08:00"
+  },
+  {
+    "event": "K2",
+    "instruction": "R-13",
+    "line": "L02",
+    "actor": "DE1",
+    "status": "not_picked",
+    "at": "2026-12-03T11:07:00+08:00"
+  },
+  {
+    "event": "K3",
+    "instruction": "R-18",
+    "line": "L03",
+    "actor": "DE1",
+    "status": "delivered",
+    "at": "2026-12-03T11:15:00+08:00",
+    "qty": 12,
+    "plant": "FX-E2"
+  }
+]

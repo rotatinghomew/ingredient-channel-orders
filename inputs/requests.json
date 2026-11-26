@@ -1,0 +1,27 @@
+{
+  "transfer": {
+    "id": "TX-4",
+    "line": "L02",
+    "from": "DE1",
+    "to": "DE2",
+    "qty": 28,
+    "buyer_agrees": true,
+    "acceptor_agrees": true
+  },
+  "claims": [
+    {
+      "id": "A1",
+      "line": "L03",
+      "shipment": "K3",
+      "by": "DE1",
+      "qty": 12
+    },
+    {
+      "id": "A2",
+      "line": "L03",
+      "shipment": "K3",
+      "by": "DE2",
+      "qty": 12
+    }
+  ]
+}

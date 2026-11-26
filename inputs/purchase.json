@@ -1,0 +1,40 @@
+{
+  "order": "GP-11-S4",
+  "buyer": "GP-11",
+  "billing_district": "E11",
+  "sku": "P11",
+  "hub": "HK-7",
+  "lines": [
+    {
+      "id": "L01",
+      "plant": "FX-E1",
+      "district": "E11",
+      "qty": 40,
+      "within_order_independent": true,
+      "sales": "direct"
+    },
+    {
+      "id": "L02",
+      "plant": "FX-W1",
+      "district": "W13",
+      "qty": 28,
+      "within_order_independent": true,
+      "sales": "DE1"
+    },
+    {
+      "id": "L03",
+      "plant": "FX-E2",
+      "district": "E12",
+      "qty": 22,
+      "within_order_independent": true,
+      "sales": "DE1"
+    }
+  ],
+  "destination_confirmation": {
+    "id": "U99",
+    "line": "L02",
+    "district": "W13",
+    "signed_by": "GP-11",
+    "at": "2026-12-03T15:33:00+08:00"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "product": "pectin-P",
+  "regions": [
+    {
+      "id": "E",
+      "districts": [
+        "E11",
+        "E12"
+      ]
+    },
+    {
+      "id": "W",
+      "districts": [
+        "W13"
+      ]
+    }
+  ],
+  "contracts": [
+    {
+      "id": "EXE",
+      "region": "E",
+      "dealer": "DE1",
+      "skus": [
+        "P11",
+        "P12"
+      ],
+      "from": "2026-11-01",
+      "to": "2026-12-20",
+      "exclusive": true,
+      "fee_per_case": "1.20"
+    },
+    {
+      "id": "EXW",
+      "region": "W",
+      "dealer": "DE2",
+      "skus": [
+        "P11"
+      ],
+      "from": "2026-11-01",
+      "to": "2026-12-20",
+      "exclusive": true,
+      "fee_per_case": "1.15"
+    }
+  ],
+  "direct_exception": {
+    "parent": "GP-11",
+    "plants": [
+      "FX-E1"
+    ],
+    "skus": [
+      "P11"
+    ],
+    "until": "2026-12-08"
+  },
+  "move": {
+    "district": "E12",
+    "to": "W",
+    "effective": "2026-12-04",
+    "existing_use_grace_until": "2026-12-07"
+  },
+  "settle_violation": {
+    "breach_fee_per_case": "2.40",
+    "currency": "CNY"
+  }
+}
